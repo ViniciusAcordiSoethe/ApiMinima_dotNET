@@ -15,7 +15,6 @@ var app = builder.Build();
 
 // routes
 app.MapGet("/", () => "Hello World!");
-app.MapGet("/felipe", () => "Oi Felipe sabe que eu sou estou usando C# para ver se vc entra pq estou com saudades!");
 //api rest
 app.MapGet("/todo/{id}", (int id) => TodoDB.GetTodo(id));
 app.MapGet("/todolist", () => TodoDB.GetTodoList());
